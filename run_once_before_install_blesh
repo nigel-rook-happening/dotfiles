@@ -1,0 +1,7 @@
+# ble.sh
+mkdir -p /tmp/blesh
+pushd /tmp/blesh
+git clone https://github.com/akinomyoga/ble.sh.git
+make -C ble.sh install
+popd
+rm -rf /tmp/blesh
