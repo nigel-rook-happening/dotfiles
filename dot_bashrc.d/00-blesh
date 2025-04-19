@@ -1,0 +1,5 @@
+if [[ -f "$HOME/.local/share/blesh/ble.sh" ]]; then
+  . "$HOME/.local/share/blesh/ble.sh"
+elif [[ -f "/usr/share/blesh/ble.sh" ]]; then
+  . /usr/share/blesh/ble.sh
+fi
