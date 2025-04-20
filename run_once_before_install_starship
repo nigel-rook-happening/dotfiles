@@ -1,2 +1,8 @@
 #!/bin/sh
-curl -sS https://starship.rs/install.sh | sh
+mkdir /tmp/starship
+pushd /tmp/starship
+curl -O https://starship.rs/install.sh
+chmod +x install.sh
+./install.sh -b "$HOME/bin"
+popd
+rm -r /tmp/starship
