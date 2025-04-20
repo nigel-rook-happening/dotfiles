@@ -1,4 +1,5 @@
 #!/bin/sh
+mkdir -p "$HOME/bin"
 mkdir /tmp/starship
 pushd /tmp/starship
 curl -O https://starship.rs/install.sh
