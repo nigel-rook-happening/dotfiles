@@ -1,4 +1,4 @@
-# ble.sh
+#!/bin/sh
 mkdir -p /tmp/blesh
 pushd /tmp/blesh
 git clone https://github.com/akinomyoga/ble.sh.git
