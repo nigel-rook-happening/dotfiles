@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if [[ ! -f "$HOME/.ssh/id_ed25519.pub" ]]; then
+  ssh-keygen -t ed25519 -f "$HOME/.ssh/id_ed25519" -N ''
+  echo "Public Key:"
+  cat "$HOME/.ssh/id_ed25519.pub"
+fi
+
+# Update chezmoi remote to use ssh auth
+pushd {{ .chezmoi.sourceDir }}
+if [[ "$(git remote -v)" =~ "https://" ]]; then
+  git remote set-url origin $(git remote -v | head -n 1 | awk '{ print $2 }' | sed 's|^https://github.com/\([^ ]\+.git\)|git@github.com:\1|')
+fi
+popd
