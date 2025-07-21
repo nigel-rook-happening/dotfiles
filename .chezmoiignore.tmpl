@@ -2,3 +2,7 @@
 run_once_before_install_blesh
 dot_bashrc.d/**/*
 {{ end }}
+
+{{ if ne .chezmoi.os "darwin" }}
+dot_zshrc
+{{ end }}
