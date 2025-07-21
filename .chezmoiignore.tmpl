@@ -1,0 +1,4 @@
+{{ if eq .chezmoi.os "darwin" }}
+run_once_before_install_blesh
+dot_bashrc.d/**/*
+{{ end }}
