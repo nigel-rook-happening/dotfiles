@@ -2,14 +2,14 @@
 *-linux
 *_linux
 .bashrc
-dot_bashrc.d/**/*
+.bashrc.d/**/*
 {{ end }}
 
 {{ if ne .chezmoi.os "darwin" }}
 *-darwin
 *_darwin
-dot_zshrc
-dot_zshrc.d/**/*
+.zshrc
+.zshrc.d/**/*
 {{ end }}
 
 {{ if ne .hostType "happening" }}
