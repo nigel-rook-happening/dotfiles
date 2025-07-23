@@ -2,6 +2,10 @@ autoload -Uz compinit
 compinit
 zstyle ':completion:*' menu select
 
+# Keybindings for home/end
+bindkey '\e[H'    beginning-of-line
+bindkey '\e[F'    end-of-line
+
 export PATH="$PATH:$HOME/bin"
 
 if which starship >> /dev/null 2>&1 ; then
