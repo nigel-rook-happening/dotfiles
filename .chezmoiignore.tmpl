@@ -6,3 +6,8 @@ dot_bashrc.d/**/*
 {{ if ne .chezmoi.os "darwin" }}
 dot_zshrc
 {{ end }}
+
+{{ if ne .hostType "happening" }}
+*-happening
+*_happening
+{{ end }}
