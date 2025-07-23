@@ -1,13 +1,27 @@
-{{ if eq .chezmoi.os "darwin" }}
-run_once_before_install_blesh
+{{ if ne .chezmoi.os "linux" }}
+*-linux
+*_linux
+.bashrc
 dot_bashrc.d/**/*
 {{ end }}
 
 {{ if ne .chezmoi.os "darwin" }}
+*-darwin
+*_darwin
 dot_zshrc
 {{ end }}
 
 {{ if ne .hostType "happening" }}
 *-happening
 *_happening
+{{ end }}
+
+{{ if ne .hostType "laptop" }}
+*-laptop
+*_laptop
+{{ end }}
+
+{{ if ne .hostType "server" }}
+*-server
+*_server
 {{ end }}
