@@ -8,7 +8,7 @@ bindkey '\e[F'    end-of-line
 
 export PATH="$PATH:$HOME/bin"
 
-if which starship >> /dev/null 2>&1 ; then
+if which starship &> /dev/null ; then
   eval "$(starship init zsh)"
 fi
 
@@ -16,7 +16,7 @@ if [[ -f "$HOME/.atuin/bin/env" ]]; then
   . "$HOME/.atuin/bin/env"
 fi
 
-if which atuin >> /dev/null 2&>1; then
+if which atuin &> /dev/null; then
   eval "$(atuin init zsh)"
 fi
 
