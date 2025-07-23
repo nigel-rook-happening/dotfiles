@@ -1,0 +1,7 @@
+if [[ -f "$HOME/.atuin/bin/env" ]]; then
+  . "$HOME/.atuin/bin/env"
+fi
+
+if which atuin &> /dev/null; then
+  eval "$(atuin init zsh)"
+fi
