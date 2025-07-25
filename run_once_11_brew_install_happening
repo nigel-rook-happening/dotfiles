@@ -1,4 +1,6 @@
 #!/bin/sh
 
-brew install coreutils gnu-getopt make kubernetes-cli
+brew install coreutils gnu-getopt make kubernetes-cli rust 
 brew install --cask docker-desktop
+
+cargo install hbs-cli
