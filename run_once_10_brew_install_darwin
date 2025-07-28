@@ -1,3 +1,4 @@
 #!/bin/sh
 
+brew install ack
 brew install --cask maccy font-fira-code-nerd-font
