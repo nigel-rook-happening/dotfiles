@@ -2,7 +2,7 @@
 *-linux
 *_linux
 .bashrc
-.bashrc.d/**/*
+.bashrc.d/
 {{ end }}
 
 {{ if ne .chezmoi.os "darwin" }}
@@ -10,7 +10,7 @@ Library/
 *-darwin
 *_darwin
 .zshrc
-.zshrc.d/**/*
+.zshrc.d/
 {{ end }}
 
 {{ if ne .hostType "happening" }}
