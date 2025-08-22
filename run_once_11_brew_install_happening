@@ -1,0 +1,6 @@
+#!/bin/sh
+
+brew install coreutils gnu-getopt make kubernetes-cli rust yq wget kafka
+brew install --cask docker-desktop
+
+cargo install hbs-cli
