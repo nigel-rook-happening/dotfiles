@@ -1,5 +1,5 @@
 {{ $passphrase := promptStringOnce . "passphrase" "passphrase" -}}
-{{ $hostType := promptChoiceOnce . "hostType" "What type of machine is this?" (list "laptop" "server") }}
+{{ $hostType := promptChoiceOnce . "hostType" "What type of machine is this?" (list "laptop" "server" "happening") }}
 
 encryption = "gpg"
 [data]
