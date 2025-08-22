@@ -13,11 +13,6 @@ Library/
 .zshrc.d/
 {{ end }}
 
-{{ if ne .hostType "happening" }}
-*-happening
-*_happening
-{{ end }}
-
 {{ if ne .hostType "laptop" }}
 *-laptop
 *_laptop
