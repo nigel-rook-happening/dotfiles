@@ -1,5 +1,5 @@
 {
-  "Profiles": [
+  "Profiles" : [
     {
       "Ansi 7 Color (Light)" : {
         "Red Component" : 0.59999999999999998,
@@ -331,6 +331,7 @@
         "Green Component" : 0.23660069704055786
       },
       "Name" : "Chezmoi Profile",
+      "Rewritable" : true,
       "Transparency" : 0,
       "Horizontal Spacing" : 1,
       "Cursor Color (Dark)" : {
