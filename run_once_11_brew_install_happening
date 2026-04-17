@@ -1,6 +1,10 @@
 #!/bin/sh
 
+# Bet;er
 brew install coreutils gnu-getopt make kubernetes-cli rust yq wget kafka kcat
+# monorepo
+brew install bazelisk direnv
+
 brew install --cask docker-desktop
 
 cargo install hbs-cli
