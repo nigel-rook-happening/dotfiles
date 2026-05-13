@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Bet;er
-brew install coreutils gnu-getopt make kubernetes-cli rust yq wget kafka kcat
+brew install coreutils gnu-getopt make kubernetes-cli rust yq wget kafka kcat kerl
 # monorepo
 brew install bazelisk direnv
 
