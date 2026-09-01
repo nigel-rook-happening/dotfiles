@@ -3,7 +3,7 @@
 # Betler
 brew install coreutils gnu-getopt make kubernetes-cli rust yq wget kafka kcat kerl "erlang@27" "erlang@28" "erlang@29" node k6
 # monorepo
-brew install bazelisk direnv
+brew install bazelisk direnv go
 
 brew install --cask docker-desktop
 
